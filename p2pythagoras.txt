@@ -37,4 +37,4 @@ elif formula == 'b':
     print(garis_b)
 
 else:
-	print('Please select a side between a, b, c')
+	print('pilih sisi mana yang mau dihitung a, b, c')
