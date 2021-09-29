@@ -1,0 +1,40 @@
+from math import sqrt
+
+
+formula = input('pilih sisi mana (a, b, c) yang mau dihitung? garis ')
+
+if formula == 'c':
+	garis_a = int(input('panjang sisi a: '))
+	garis_b = int(input('panjang sisi b: '))
+
+	garis_c = sqrt(garis_a * garis_a + garis_b * garis_b)
+	
+	print('panjang c adalah ' )
+	print(garis_c)
+
+elif formula == 'a':
+    garis_b = int(input('panjang sisi b: '))
+    garis_c = int(input('panjang sisi c: '))
+    if (garis_b > garis_c):
+        print("panjang c tidak vailid!!")
+    garis_c = int(input('masukan sisi c: '))
+        
+    garis_a = sqrt((garis_c * garis_c) - (garis_b * garis_b))
+    
+    print('panjang a adalah' )
+    print(garis_a)
+
+elif formula == 'b':
+    garis_a = int(input('panjang sisi a: '))
+    garis_c = int(input('panjang sisi c: '))
+    if(garis_a > garis_c):
+            print("panjang c tidak vailid!!")
+    garis_c = int(input('masukan sisi c: '))
+        
+    garis_b = sqrt(garis_c * garis_c - garis_a * garis_a)
+    
+    print('panjang b adalah')
+    print(garis_b)
+
+else:
+	print('Please select a side between a, b, c')

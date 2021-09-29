@@ -1,0 +1,14 @@
+# program untuk cari angka yang terbesar
+
+kok1 = float(input("Masukan angka pertama : "))
+kok2 = float(input("Masukan angka kedua   : "))
+kok3 = float(input("Masukan angka ketiga  : "))
+
+if (kok1 > kok2) and (kok1 > kok3):
+   largest = kok1
+elif (kok2 > kok1) and (kok2 > kok3):
+   largest = kok2
+else:
+   largest = kok3
+
+print("Angka terbesar adalah",largest)
