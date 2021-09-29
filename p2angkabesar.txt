@@ -5,10 +5,11 @@ kok2 = float(input("Masukan angka kedua   : "))
 kok3 = float(input("Masukan angka ketiga  : "))
 
 if (kok1 > kok2) and (kok1 > kok3):
-   largest = kok1
+   c = kok1
 elif (kok2 > kok1) and (kok2 > kok3):
-   largest = kok2
+   c = kok2
 else:
-   largest = kok3
+   c = kok3
 
-print("Angka terbesar adalah",largest)
+print("Angka terbesar adalah",c)
+
